@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/blog/css/main.css?v=6.5.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=6.5.0">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=6.5.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Gemini',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="HTML ElementsBelow is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs. Heading 1Heading 2Heading 3Heading 4Heading 5H">
+<meta name="keywords" content="makerdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Makerdown Syntax">
+<meta property="og:url" content="https://www.knightboy.cn/Blog/2018/11/09/Makerdown-Syntax/index.html">
+<meta property="og:site_name" content="Knight&#39;s Blog">
+<meta property="og:description" content="HTML ElementsBelow is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs. Heading 1Heading 2Heading 3Heading 4Heading 5H">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Knight-boy/QQone/gh-pages/public/images/Owner.jpg">
+<meta property="og:updated_time" content="2018-11-09T11:05:12.234Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Makerdown Syntax">
+<meta name="twitter:description" content="HTML ElementsBelow is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs. Heading 1Heading 2Heading 3Heading 4Heading 5H">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Knight-boy/QQone/gh-pages/public/images/Owner.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://www.knightboy.cn/Blog/2018/11/09/Makerdown-Syntax/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Makerdown Syntax | Knight's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Knight's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.knightboy.cn/Blog/blog/2018/11/09/Makerdown-Syntax/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Knight">
+      <meta itemprop="description" content="You can't leave this world to the people you have met.">
+      <meta itemprop="image" content="/blog/images/Owner.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Knight's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Makerdown Syntax
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-09 15:26:49 / 修改时间：19:05:12" itemprop="dateCreated datePublished" datetime="2018-11-09T15:26:49+08:00">2018-11-09</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="HTML-Elements"><a href="#HTML-Elements" class="headerlink" title="HTML Elements"></a>HTML Elements</h2><p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
+<h1 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading 1"></a>Heading 1</h1><h2 id="Heading-2"><a href="#Heading-2" class="headerlink" title="Heading 2"></a>Heading 2</h2><h3 id="Heading-3"><a href="#Heading-3" class="headerlink" title="Heading 3"></a>Heading 3</h3><h4 id="Heading-4"><a href="#Heading-4" class="headerlink" title="Heading 4"></a>Heading 4</h4><h5 id="Heading-5"><a href="#Heading-5" class="headerlink" title="Heading 5"></a>Heading 5</h5><h6 id="Heading-6"><a href="#Heading-6" class="headerlink" title="Heading 6"></a>Heading 6</h6><h3 id="Body-text"><a href="#Body-text" class="headerlink" title="Body text"></a>Body text</h3><p>Lorem ipsum dolor sit amet, test link adipiscing elit. <strong>This is strong</strong>. Nullam dignissim convallis est. Quisque aliquam.</p>
+<p><img src="https://raw.githubusercontent.com/Knight-boy/QQone/gh-pages/public/images/Owner.jpg" alt="Smithsonian Image"></p>
+<p><em>This is emphasized</em>. Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+<p>HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+<h3 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h3><blockquote>
+<p>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.</p>
+</blockquote>
+<h2 id="List-Types"><a href="#List-Types" class="headerlink" title="List Types"></a>List Types</h2><h3 id="Ordered-Lists"><a href="#Ordered-Lists" class="headerlink" title="Ordered Lists"></a>Ordered Lists</h3><ol>
+<li>Item one<ol>
+<li>sub item one</li>
+<li>sub item two</li>
+<li>sub item three</li>
+</ol>
+</li>
+<li>Item two</li>
+</ol>
+<h3 id="Unordered-Lists"><a href="#Unordered-Lists" class="headerlink" title="Unordered Lists"></a>Unordered Lists</h3><ul>
+<li>Item one</li>
+<li>Item two</li>
+<li>Item three</li>
+</ul>
+<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">Header1</th>
+<th style="text-align:center">Header2</th>
+<th style="text-align:right">Header3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cell1</td>
+<td style="text-align:center">cell2</td>
+<td style="text-align:right">cell3</td>
+</tr>
+<tr>
+<td style="text-align:left">cell4</td>
+<td style="text-align:center">cell5</td>
+<td style="text-align:right">cell6</td>
+</tr>
+<tr>
+<td style="text-align:left">—–</td>
+</tr>
+<tr>
+<td style="text-align:left">cell1</td>
+<td style="text-align:center">cell2</td>
+<td style="text-align:right">cell3</td>
+</tr>
+<tr>
+<td style="text-align:left">cell4</td>
+<td style="text-align:center">cell5</td>
+<td style="text-align:right">cell6</td>
+</tr>
+<tr>
+<td style="text-align:left">=====</td>
+</tr>
+<tr>
+<td style="text-align:left">Foot1</td>
+<td style="text-align:center">Foot2</td>
+<td style="text-align:right">Foot3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><figure class="highlight plain"><figcaption><span>lang: css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">  float: left;</span><br><span class="line">  margin: 0 -240px 0 0;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Buttons"><a href="#Buttons" class="headerlink" title="Buttons"></a>Buttons</h2><p>Make any link standout more when applying the <code>.btn</code> class.</p>
+<figure class="highlight plain"><figcaption><span>lang: html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success Button&lt;/a&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div markdown="0"><a href="#" class="btn">Primary Button</a></div><br><div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div><br><div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div><br><div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div><br><div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+
+<h2 id="KBD"><a href="#KBD" class="headerlink" title="KBD"></a>KBD</h2><p>You can also use <code>&lt;kbd&gt;</code> tag for keyboard buttons.</p>
+<figure class="highlight plain"><figcaption><span>lang: html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;kbd&gt;W&lt;/kbd&gt;&lt;kbd&gt;A&lt;/kbd&gt;&lt;kbd&gt;S&lt;/kbd&gt;&lt;kbd&gt;D&lt;/kbd&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. <strong>Midtown Maddness!!</strong></p>
+<h2 id="Notices"><a href="#Notices" class="headerlink" title="Notices"></a>Notices</h2><p><strong>Watch out!</strong> You can also add notices by appending <code>{: .notice}</code> to a paragraph.</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/makerdown/" rel="tag"># makerdown</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2018/11/09/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/blog/images/Owner.jpg" alt="Knight">
+            
+              <p class="site-author-name" itemprop="name">Knight</p>
+              <p class="site-description motion-element" itemprop="description">You can't leave this world to the people you have met.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/blog/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/blog/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/Knight-boy" title="GitHub &rarr; https://github.com/Knight-boy" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:hpanw@foxmail.com" title="E-Mail &rarr; mailto:hpanw@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/u/3787836194" title="Weibo &rarr; https://weibo.com/u/3787836194" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://plus.google.com/104168334690151359765" title="Google &rarr; https://plus.google.com/104168334690151359765" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-Elements"><span class="nav-number">1.</span> <span class="nav-text">HTML Elements</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Heading-1"><span class="nav-number"></span> <span class="nav-text">Heading 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Heading-2"><span class="nav-number">1.</span> <span class="nav-text">Heading 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Heading-3"><span class="nav-number">1.1.</span> <span class="nav-text">Heading 3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Heading-4"><span class="nav-number">1.1.1.</span> <span class="nav-text">Heading 4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Heading-5"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">Heading 5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Heading-6"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">Heading 6</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Body-text"><span class="nav-number">1.2.</span> <span class="nav-text">Body text</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Blockquotes"><span class="nav-number">1.3.</span> <span class="nav-text">Blockquotes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#List-Types"><span class="nav-number">2.</span> <span class="nav-text">List Types</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ordered-Lists"><span class="nav-number">2.1.</span> <span class="nav-text">Ordered Lists</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unordered-Lists"><span class="nav-number">2.2.</span> <span class="nav-text">Unordered Lists</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tables"><span class="nav-number">3.</span> <span class="nav-text">Tables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Snippets"><span class="nav-number">4.</span> <span class="nav-text">Code Snippets</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Buttons"><span class="nav-number">5.</span> <span class="nav-text">Buttons</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#KBD"><span class="nav-number">6.</span> <span class="nav-text">KBD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Notices"><span class="nav-number">7.</span> <span class="nav-text">Notices</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Knight</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=6.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=6.5.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=6.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

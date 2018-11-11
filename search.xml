@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[给内向型求职者的几点建议]]></title>
+    <url>%2FBlog%2F2018%2F11%2F11%2F%E7%BB%99%E5%86%85%E5%90%91%E5%9E%8B%E6%B1%82%E8%81%8C%E8%80%85%E7%9A%84%E5%87%A0%E7%82%B9%E5%BB%BA%E8%AE%AE%2F</url>
+    <content type="text"><![CDATA[12提前准备：准备好每一类问题，给自己一次审视自己，重新发现自我的机会。 网申开放题怎么答？12开放题侧重考察个人的合作能力和技巧，工作的抗压能力，是否有不利于工作和团队发展的一些问题等开放性问题在正式找工作之前就应该去做，抽时间搞明白自己的优势和劣势。比如，我是个什么样的人，我在学校做了哪些牛叉的工作，取得了哪些突出的成就，这些成就体现了我的那些气质，这种气质的我应该找什么类型的工作。即认清了自己，也能够轻松应对求职面试问题，岂不是一石二鸟，美滋滋~ Question 1: 价值观 你做的最成功/最失败的一件事是什么？让你感到最有成就感的是什么？让你感到最遗憾的一件事是什么？ 这类问题，HR主要考察的你的价值观导向，在你眼里什么是最重要；对你来说，什么才算成功。 我收集了几点通常的做法： Question 2: 未来规划 谈谈你的职业规划？ 这类问题，HR希望挖掘你应聘的深层次动机，看你是否具有职业稳定性。 Question 3: 学习能力 谈谈你是怎样学习(前端 or 后端)的? 这类问题就谈你从多种渠道，全方位，立体式的挖掘你对某一领域的研究成果或方式，展现你的浓厚的兴趣和好奇心，回答越具体越好。 Question 4: 解决问题能力 说说你曾经面对过哪些困难，你是如何解决的？举一个令你印象最深的一个。 Question 5: 性格测验 谈谈你是一个什么样的人？]]></content>
+      <categories>
+        <category>求职</category>
+      </categories>
+      <tags>
+        <tag>应聘</tag>
+        <tag>经验</tag>
+        <tag>职场</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[post_name]]></title>
+    <url>%2FBlog%2F2018%2F11%2F10%2Fpost-name%2F</url>
+    <content type="text"><![CDATA[图片相对地址测试 无宽高设置 宽高设置 突破容器限制HTML方式: 直接在 Markdown 文件中编写 HTML 来调用其中 class=&quot;full-image&quot; 是必须的 标签 方式，要求版本在0.4.5或以上1&lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;https://theme-next.iissnan.com/uploads/tags/full-image.jpg&quot; class=&quot;full-image&quot; alt=&quot;alt&quot; title=&quot;title&quot; /&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt; fi别名1&lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;https://theme-next.iissnan.com/uploads/tags/full-image.jpg&quot; class=&quot;full-image&quot; alt=&quot;alt&quot; title=&quot;title&quot; /&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Something Wrong]]></title>
+    <url>%2FBlog%2F2018%2F11%2F10%2FSomething-Wrong%2F</url>
+    <content type="text"><![CDATA[Github 子项目如下图所示： ​ 当通过标题展开文章内容时，root地址将会重复加载，使url链接失效 click title after… ​ 当通过下方缩放按钮获取整篇文章内容时，链接是有效的。 more than… 按照hexo 官方文档中如下设置在命令$ hexo g 生成的文档中，最终被解析出的静态文档index.html中的链接中又重复添加了子文件夹中的/Blog 设置情况 解析情况]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>site</tag>
+        <tag>subdirectory</tag>
+        <tag>title</tag>
+        <tag>problem</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Makerdown Syntax]]></title>
+    <url>%2FBlog%2F2018%2F11%2F09%2FMakerdown-Syntax%2F</url>
+    <content type="text"><![CDATA[HTML ElementsBelow is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs. Heading 1Heading 2Heading 3Heading 4Heading 5Heading 6Body textLorem ipsum dolor sit amet, test link adipiscing elit. This is strong. Nullam dignissim convallis est. Quisque aliquam. This is emphasized. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Blockquotes Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. List TypesOrdered Lists Item one sub item one sub item two sub item three Item two Unordered Lists Item one Item two Item three Tables Header1 Header2 Header3 cell1 cell2 cell3 cell4 cell5 cell6 —– cell1 cell2 cell3 cell4 cell5 cell6 ===== Foot1 Foot2 Foot3 Code Snippetslang: html12345#container &#123; float: left; margin: 0 -240px 0 0; width: 100%;&#125; ButtonsMake any link standout more when applying the .btn class. 1&lt;a href="#" class="bs-callout bs-callout-warning"&gt;Success Button&lt;/a&gt; Success ButtonWarning ButtonDanger ButtonInfo Button KBDYou can also use &lt;kbd&gt; tag for keyboard buttons. lang: html123&lt;kbd&gt;W&lt;/kbd&gt;&lt;kbd&gt;A&lt;/kbd&gt;&lt;kbd&gt;S&lt;/kbd&gt;&lt;kbd&gt;D&lt;/kbd&gt; Press WASD to move your car. Midtown Maddness!! NoticesWatch out! You can also add notices by appending {: .notice} to a paragraph.]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>makerdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2FBlog%2F2018%2F11%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>

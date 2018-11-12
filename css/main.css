@@ -1945,7 +1945,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9da7;
+  background: #09609e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3233,7 +3233,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("http://oty1v077k.bkt.clouddn.com/body_girlasideflower.jpg");
+  background: url("https://raw.githubusercontent.com/Knight-boy/QQone/gh-pages/public/images/body_girlasideflower.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

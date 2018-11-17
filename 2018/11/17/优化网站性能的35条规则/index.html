@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Knight&#39;s Blog">
 <meta property="og:description" content="最小化HTTP请求次数​       最终用户响应时间的80％用于前端。大部分时间都在下载页面中的所有组件：图像，样式表，脚本，Flash等。减少组件数量反过来减少了呈现页面所需的HTTP请求数量。这是更快页面的关键。 　　减少页面中组件数量的一种方法是简化页面设计。但有没有办法构建内容更丰富的页面，同时还能实现快速响应时间？以下是一些减少HTTP请求数量的技术，同时仍支持丰富的页面设计。 　　组">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-17T14:17:14.662Z">
+<meta property="og:updated_time" content="2018-11-17T14:49:53.986Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="优化网站性能的35条规则">
 <meta name="twitter:description" content="最小化HTTP请求次数​       最终用户响应时间的80％用于前端。大部分时间都在下载页面中的所有组件：图像，样式表，脚本，Flash等。减少组件数量反过来减少了呈现页面所需的HTTP请求数量。这是更快页面的关键。 　　减少页面中组件数量的一种方法是简化页面设计。但有没有办法构建内容更丰富的页面，同时还能实现快速响应时间？以下是一些减少HTTP请求数量的技术，同时仍支持丰富的页面设计。 　　组">
@@ -427,7 +427,7 @@
                 
               
 
-              <time title="创建时间：2018-11-17 21:17:52 / 修改时间：22:17:14" itemprop="dateCreated datePublished" datetime="2018-11-17T21:17:52+08:00">2018-11-17</time>
+              <time title="创建时间：2018-11-17 21:17:52 / 修改时间：22:49:53" itemprop="dateCreated datePublished" datetime="2018-11-17T21:17:52+08:00">2018-11-17</time>
             
 
             
@@ -560,11 +560,11 @@
 <p>​       如此处所示，该<code>expression</code>方法接受JavaScript表达式。CSS属性设置为评估JavaScript表达式的结果。<code>expression</code>其他浏览器会忽略该方法，因此在Internet Explorer中设置属性以在跨浏览器创建一致体验时非常有用。</p>
 <p>​       表达式的问题在于它们的评估频率高于大多数人的预期。它们不仅在页面呈现和调整大小时进行评估，而且在页面滚动时甚至在用户将鼠标移动到页面上时进行评估。在CSS表达式中添加计数器可以让我们跟踪CSS表达式的计算时间和频率。在页面上移动鼠标可以轻松生成10,000多个评估。</p>
 <p>​       减少CSS表达式求值次数的一种方法是使用一次性表达式，其中第一次计算表达式时，它将style属性设置为显式值，这将替换CSS表达式。如果必须在页面的整个生命周期中动态设置样式属性，则使用事件处理程序而不是CSS表达式是另一种方法。如果必须使用CSS表达式，请记住它们可能会被评估数千次，并可能影响页面的性能。</p>
-<h4 id="将JavaScript和CSS独立成外部文件"><a href="#将JavaScript和CSS独立成外部文件" class="headerlink" title="将JavaScript和CSS独立成外部文件"></a>将JavaScript和CSS独立成外部文件</h4><p>​       其中许多性能规则都涉及外部组件的管理方式。但是，在出现这些考虑因素之前，您应该提出一个更基本的问题：JavaScript和CSS是否应该包含在外部文件中，还是内嵌在页面中？</p>
-<p>​       在现实世界中使用外部文件通常会产生更快的页面，因为浏览器会缓存JavaScript和CSS文件。每次请求HTML文档时，都会下载HTML文档中内联的JavaScript和CSS。这减少了所需的HTTP请求数，但增加了HTML文档的大小。另一方面，如果JavaScript和CSS位于浏览器缓存的外部文件中，则HTML文档的大小会减少，而不会增加HTTP请求的数量。</p>
-<p>​       因此，关键因素是外部JavaScript和CSS组件相对于请求的HTML文档数量的缓存频率。这个因素虽然难以量化，但可以使用各种指标进行衡量。如果您站点上的用户每个会话有多个页面查看，并且您的许多页面重复使用相同的脚本和样式表，则缓存的外部文件可能会带来更大的潜在好处。</p>
-<p>​       许多网站都处于这些指标的中间。对于这些站点，最佳解决方案通常是将JavaScript和CSS部署为外部文件。内联的唯一例外是主页，例如<a href="http://www.yahoo.com/" target="_blank" rel="noopener">Yahoo！的首页</a>和<a href="http://my.yahoo.com/" target="_blank" rel="noopener">My Yahoo! </a>。每个会话具有很少（可能只有一个）页面视图的主页可能会发现内联JavaScript和CSS会导致更快的最终用户响应时间。</p>
-<p>​       对于通常是许多页面视图中的第一个的首页，有一些技术可以利用内联提供的HTTP请求的减少，以及通过使用外部文件实现的缓存优势。其中一种技术是在首页中内联JavaScript和CSS，但在页面加载完成后动态下载外部文件。后续页面将引用应该已存在于浏览器缓存中的外部文件。</p>
+<h4 id="将JavaScript和CSS独立成外部文件"><a href="#将JavaScript和CSS独立成外部文件" class="headerlink" title="将JavaScript和CSS独立成外部文件"></a>将JavaScript和CSS独立成外部文件</h4><p>​    其中许多性能规则都涉及外部组件的管理方式。但是，在出现这些考虑因素之前，您应该提出一个更基本的问题：JavaScript和CSS是否应该包含在外部文件中，还是内嵌在页面中？</p>
+<p>​    在现实世界中使用外部文件通常会产生更快的页面，因为浏览器会缓存JavaScript和CSS文件。每次请求HTML文档时，都会下载HTML文档中内联的JavaScript和CSS。这减少了所需的HTTP请求数，但增加了HTML文档的大小。另一方面，如果JavaScript和CSS位于浏览器缓存的外部文件中，则HTML文档的大小会减少，而不会增加HTTP请求的数量。</p>
+<p>​    因此，关键因素是外部JavaScript和CSS组件相对于请求的HTML文档数量的缓存频率。这个因素虽然难以量化，但可以使用各种指标进行衡量。如果您站点上的用户每个会话有多个页面查看，并且您的许多页面重复使用相同的脚本和样式表，则缓存的外部文件可能会带来更大的潜在好处。</p>
+<p>​    许多网站都处于这些指标的中间。对于这些站点，最佳解决方案通常是将JavaScript和CSS部署为外部文件。内联的唯一例外是主页，例如<a href="http://www.yahoo.com/" target="_blank" rel="noopener">Yahoo！的首页</a>和<a href="http://my.yahoo.com/" target="_blank" rel="noopener">My Yahoo! </a>。每个会话具有很少（可能只有一个）页面视图的主页可能会发现内联JavaScript和CSS会导致更快的最终用户响应时间。</p>
+<p>​    对于通常是许多页面视图中的第一个的首页，有一些技术可以利用内联提供的HTTP请求的减少，以及通过使用外部文件实现的缓存优势。其中一种技术是在首页中内联JavaScript和CSS，但在页面加载完成后动态下载外部文件。后续页面将引用应该已存在于浏览器缓存中的外部文件。</p>
 <h4 id="减少DNS查询"><a href="#减少DNS查询" class="headerlink" title="减少DNS查询"></a>减少DNS查询</h4><p>　　域名系统（DNS）将主机名映射到IP地址，就像电话簿将人们的姓名映射到他们的电话号码一样。当您在浏览器中键入<a href="http://www.yahoo.com时，浏览器联系的DNS解析器将返回该服务器的IP地址。DNS有成本。DNS通常需要20-120毫秒才能查找给定主机名的IP地址。在DNS查找完成之前，浏览器无法从此主机名下载任何内容。" target="_blank" rel="noopener">www.yahoo.com时，浏览器联系的DNS解析器将返回该服务器的IP地址。DNS有成本。DNS通常需要20-120毫秒才能查找给定主机名的IP地址。在DNS查找完成之前，浏览器无法从此主机名下载任何内容。</a></p>
 <p>　　缓存DNS查找以获得更好的性能。此缓存可以在由用户的ISP或局域网维护的特殊缓存服务器上进行，但在单个用户的计算机上也存在缓存。DNS信息保留在操作系统的DNS缓存中（Microsoft Windows上的“DNS客户端服务”）。大多数浏览器都有自己的缓存，与操作系统的缓存分开。只要浏览器将DNS记录保存在自己的缓存中，它就不会因操作系统请求记录而烦恼。</p>
 <p>　　默认情况下，Internet Explorer会将DNS查找缓存30分钟，具体 <code>DnsCacheTimeout</code>取决于注册表设置。Firefox将DNS查找缓存1分钟，由<code>network.dnsCacheExpiration</code>配置设置控制。（Fasterfox将此更改为1小时。）</p>
@@ -627,7 +627,7 @@
 <li><em>预期的</em>预加载 - 在启动重新设计之前提前预加载。经常在重新设计之后听到：“新网站很酷，但比以前慢”。部分问题可能是用户使用完整缓存访问旧网站，但新网站始终是空缓存体验。您可以通过在启动重新设计之前预加载某些组件来缓解此副作用。您的旧站点可以使用浏览器空闲的时间并请求新站点将使用的图像和脚本</li>
 </ul>
 <h4 id="减少DOM元素的数量"><a href="#减少DOM元素的数量" class="headerlink" title="减少DOM元素的数量"></a>减少DOM元素的数量</h4><p>　　复杂页面意味着要下载更多字节，这也意味着JavaScript中的DOM访问速度更慢。例如，当您想要添加事件处理程序时，如果在页面上循环遍历500或5000个DOM元素，则会有所不同。</p>
-<p>　　大量的DOM元素可能是一种通症，即应该通过页面标记来改进，而不必删除内容。您是否使用嵌套表进行布局？您是否只是为了解决布局问题而投入更多==<div>==？也许有一种更好，语义更正确的标记方式。</div></p>
+<p>　　大量的DOM元素可能是一种通症，即应该通过页面标记来改进，而不必删除内容。您是否使用嵌套表进行布局？您是否只是为了解决布局问题而投入更多<code>&lt;div&gt;</code>？也许有一种更好，语义更正确的标记方式。</p>
 <p>　　<a href="https://developer.yahoo.com/yui/" target="_blank" rel="noopener">YUI CSS实用程序</a> 提供了很好的布局帮助：grids.css可以帮助您完成整体布局，fonts.css和reset.css可以帮助您去除浏览器的默认格式。这是一个重新开始并考虑标记的机会，例如，<code>&lt;div&gt;</code>只有在语义上有意义时才使用s，而不是因为它呈现新行。</p>
 <p>　　DOM元素的数量很容易测试，只需键入Firebug的控制台：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">'*'</span>).length;</span><br></pre></td></tr></table></figure>
@@ -652,7 +652,7 @@
 <h4 id="减小Cookie大小"><a href="#减小Cookie大小" class="headerlink" title="减小Cookie大小"></a>减小Cookie大小</h4><p>　　HTTP cookie的使用有多种原因，例如身份验证和个性化。有关cookie的信息在Web服务器和浏览器之间的HTTP标头中进行交换。保持cookie的大小尽可能低是非常重要的，以尽量减少对用户响应时间的影响。</p>
 <p>　　欲了解更多信息，请查看 Tenni Theurer和Patty Chi撰写的<a href="http://yuiblog.com/blog/2007/03/01/performance-research-part-3/" target="_blank" rel="noopener">“当Cookie崩溃时”</a>。这项研究的主要内容：</p>
 <ul>
-<li>　　消除不必要的cookie</li>
+<li>消除不必要的cookie</li>
 <li>保持cookie大小尽可能低，以尽量减少对用户响应时间的影响</li>
 <li>请注意在适当的域级别设置cookie，以免其他子域受到影响</li>
 <li>适当地设置过期日期。较早的Expires日期或者没有更早删除cookie，从而改善了用户响应时间</li>
@@ -695,7 +695,7 @@
 <h4 id="不要在HTML中缩放图像"><a href="#不要在HTML中缩放图像" class="headerlink" title="不要在HTML中缩放图像"></a>不要在HTML中缩放图像</h4><p>　　不要使用比您需要的更大的图像，因为您可以在HTML中设置宽度和高度。如果您需要，</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">width</span>=<span class="string">"100"</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">src</span>=<span class="string">"mycat.jpg"</span> <span class="attr">alt</span>=<span class="string">"My Cat"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>　　那么您的图像（mycat.jpg）应该是100x100px而不是缩小的500x500px图像。</p>
-<h4 id="减小favicon-ico的大小并缓存"><a href="#减小favicon-ico的大小并缓存" class="headerlink" title="减小favicon.ico的大小并缓存"></a>减小favicon.ico的大小并缓存</h4><p>　　favicon.ico是一个保留在服务器根目录中的映像。这是一个必要的邪恶，因为即使你不关心它，浏览器仍然会请求它，所以最好不要回复==404 Not Found==。此外，由于它位于同一台服务器上，因此每次请求时都会发送cookie。此图像也会干扰下载顺序，例如在IE中，当您在onload中请求额外组件时，将在这些额外组件之前下载favicon。</p>
+<h4 id="减小favicon-ico的大小并缓存"><a href="#减小favicon-ico的大小并缓存" class="headerlink" title="减小favicon.ico的大小并缓存"></a>减小favicon.ico的大小并缓存</h4><p>　　favicon.ico是一个保留在服务器根目录中的映像。这是一个必要的邪恶，因为即使你不关心它，浏览器仍然会请求它，所以最好不要回复404 Not Found。此外，由于它位于同一台服务器上，因此每次请求时都会发送cookie。此图像也会干扰下载顺序，例如在IE中，当您在onload中请求额外组件时，将在这些额外组件之前下载favicon。</p>
 <p>　　因此，为了减轻拥有favicon.ico的缺点，请确保：</p>
 <ul>
 <li>它很小，最好不到1K。</li>

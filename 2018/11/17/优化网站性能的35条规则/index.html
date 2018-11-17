@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Knight&#39;s Blog">
 <meta property="og:description" content="最小化HTTP请求次数​       最终用户响应时间的80％用于前端。大部分时间都在下载页面中的所有组件：图像，样式表，脚本，Flash等。减少组件数量反过来减少了呈现页面所需的HTTP请求数量。这是更快页面的关键。 　　减少页面中组件数量的一种方法是简化页面设计。但有没有办法构建内容更丰富的页面，同时还能实现快速响应时间？以下是一些减少HTTP请求数量的技术，同时仍支持丰富的页面设计。 　　组">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-17T14:49:53.986Z">
+<meta property="og:updated_time" content="2018-11-17T14:52:42.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="优化网站性能的35条规则">
 <meta name="twitter:description" content="最小化HTTP请求次数​       最终用户响应时间的80％用于前端。大部分时间都在下载页面中的所有组件：图像，样式表，脚本，Flash等。减少组件数量反过来减少了呈现页面所需的HTTP请求数量。这是更快页面的关键。 　　减少页面中组件数量的一种方法是简化页面设计。但有没有办法构建内容更丰富的页面，同时还能实现快速响应时间？以下是一些减少HTTP请求数量的技术，同时仍支持丰富的页面设计。 　　组">
@@ -427,7 +427,7 @@
                 
               
 
-              <time title="创建时间：2018-11-17 21:17:52 / 修改时间：22:49:53" itemprop="dateCreated datePublished" datetime="2018-11-17T21:17:52+08:00">2018-11-17</time>
+              <time title="创建时间：2018-11-17 21:17:52 / 修改时间：22:52:42" itemprop="dateCreated datePublished" datetime="2018-11-17T21:17:52+08:00">2018-11-17</time>
             
 
             
@@ -565,7 +565,7 @@
 <p>​    因此，关键因素是外部JavaScript和CSS组件相对于请求的HTML文档数量的缓存频率。这个因素虽然难以量化，但可以使用各种指标进行衡量。如果您站点上的用户每个会话有多个页面查看，并且您的许多页面重复使用相同的脚本和样式表，则缓存的外部文件可能会带来更大的潜在好处。</p>
 <p>​    许多网站都处于这些指标的中间。对于这些站点，最佳解决方案通常是将JavaScript和CSS部署为外部文件。内联的唯一例外是主页，例如<a href="http://www.yahoo.com/" target="_blank" rel="noopener">Yahoo！的首页</a>和<a href="http://my.yahoo.com/" target="_blank" rel="noopener">My Yahoo! </a>。每个会话具有很少（可能只有一个）页面视图的主页可能会发现内联JavaScript和CSS会导致更快的最终用户响应时间。</p>
 <p>​    对于通常是许多页面视图中的第一个的首页，有一些技术可以利用内联提供的HTTP请求的减少，以及通过使用外部文件实现的缓存优势。其中一种技术是在首页中内联JavaScript和CSS，但在页面加载完成后动态下载外部文件。后续页面将引用应该已存在于浏览器缓存中的外部文件。</p>
-<h4 id="减少DNS查询"><a href="#减少DNS查询" class="headerlink" title="减少DNS查询"></a>减少DNS查询</h4><p>　　域名系统（DNS）将主机名映射到IP地址，就像电话簿将人们的姓名映射到他们的电话号码一样。当您在浏览器中键入<a href="http://www.yahoo.com时，浏览器联系的DNS解析器将返回该服务器的IP地址。DNS有成本。DNS通常需要20-120毫秒才能查找给定主机名的IP地址。在DNS查找完成之前，浏览器无法从此主机名下载任何内容。" target="_blank" rel="noopener">www.yahoo.com时，浏览器联系的DNS解析器将返回该服务器的IP地址。DNS有成本。DNS通常需要20-120毫秒才能查找给定主机名的IP地址。在DNS查找完成之前，浏览器无法从此主机名下载任何内容。</a></p>
+<h4 id="减少DNS查询"><a href="#减少DNS查询" class="headerlink" title="减少DNS查询"></a>减少DNS查询</h4><p>　　域名系统（DNS）将主机名映射到IP地址，就像电话簿将人们的姓名映射到他们的电话号码一样。当您在浏览器中键入<a href="http://www.yahoo.com" target="_blank" rel="noopener">www.yahoo.com</a> 时，浏览器联系的DNS解析器将返回该服务器的IP地址。DNS有成本。DNS通常需要20-120毫秒才能查找给定主机名的IP地址。在DNS查找完成之前，浏览器无法从此主机名下载任何内容。</p>
 <p>　　缓存DNS查找以获得更好的性能。此缓存可以在由用户的ISP或局域网维护的特殊缓存服务器上进行，但在单个用户的计算机上也存在缓存。DNS信息保留在操作系统的DNS缓存中（Microsoft Windows上的“DNS客户端服务”）。大多数浏览器都有自己的缓存，与操作系统的缓存分开。只要浏览器将DNS记录保存在自己的缓存中，它就不会因操作系统请求记录而烦恼。</p>
 <p>　　默认情况下，Internet Explorer会将DNS查找缓存30分钟，具体 <code>DnsCacheTimeout</code>取决于注册表设置。Firefox将DNS查找缓存1分钟，由<code>network.dnsCacheExpiration</code>配置设置控制。（Fasterfox将此更改为1小时。）</p>
 <p>　　当客户端的DNS缓存为空（对于浏览器和操作系统）时，DNS查找的数量等于网页中唯一主机名的数量。这包括页面的URL，图像，脚本文件，样式表，Flash对象等中使用的主机名。减少唯一主机名的数量可减少DNS查找的数量。</p>

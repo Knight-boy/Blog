@@ -26,6 +26,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/Blog/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/Blog/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -107,6 +114,17 @@
 
 
 
+
+<script type="text/javascript">
+	(function() {
+		if('') {
+			if(prompt('很抱歉，请您输入阅读密码？')!=='') {
+				alert('您输入的密码有误，请重新输入...');
+				history.back();
+			}
+		}
+	})();
+</script>
 
   <meta name="description" content="最小化HTTP请求次数​    最终用户响应时间的80％用于前端。大部分时间都在下载页面中的所有组件：图像，样式表，脚本，Flash等。减少组件数量反过来减少了呈现页面所需的HTTP请求数量。这是更快页面的关键。 　　减少页面中组件数量的一种方法是简化页面设计。但有没有办法构建内容更丰富的页面，同时还能实现快速响应时间？以下是一些减少HTTP请求数量的技术，同时仍支持丰富的页面设计。 　　组合文件">
 <meta name="keywords" content="Web,前端">
@@ -818,6 +836,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/Blog/2018/11/22/First/" rel="prev" title="First">
+                First <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -891,7 +913,7 @@
                 
                   <a href="/Blog/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -945,7 +967,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1102,7 +1126,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">24k</span>
+    <span title="站点总字数">69k</span>
   
 
   
@@ -1111,7 +1135,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">22 分钟</span>
+    <span title="站点阅读时长">1:02</span>
   
 </div>
 
@@ -1300,7 +1324,7 @@
         notify: false,
         appId: 'To6nWhByc3X1KaCaFnzWP5dY-gzGzoHsz',
         appKey: 'p14LXvfFMxUj57aY5n9Fx53t',
-        placeholder: 'Just go go',
+        placeholder: 'Just go now!',
         avatar:'',
         meta:guest,
         pageSize:'10' || 10,
@@ -1641,6 +1665,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
